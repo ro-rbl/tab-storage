@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <meta name="theme-color" content="#f7f7f5">
+                            <title>Tab Storage — Your links</title>
+                              <link rel="stylesheet" href="style.css">
+                                    <script src="script.js" defer></script>
+                                    </head>
+    <body>
+          <header class="topbar">
+                  <a class="brand" href="#">
+                            <span class="brand-icon"></span>
+                                  <span>tab storage</span>
+                                      </a>
+                      <span class="local-label">
+                                <span class="status-dot"></span>
+                                      
+                                          </span>
+                        </header>
+          
+            <main class="container">
+                    <section class="intro">
+                              <p class="eyebrow">YOUR LINKS</p>
+                                    <h1>Keep your links <br>within reach</h1>
+                                          <p class="subtitle">
+                                                  links
+                                                                </p>
+                                                                    </section>
+                    
+                        <section class="add-panel">
+                                  <h2>Save a link</h2>
+                                        <form id="link-form">
+                                                    <label for="url">URL</label>
+                                                            <input
+                                                                          id="url"
+                                                                                    name="url"
+                                                                                              type="text"
+                                                                                                        placeholder="https://example.com"
+                                                                                                                  required
+                                                                                                                          >
+                                                                                                                          
+                                                                                                                                  <label for="title">Name <span>(optional)</span></label>
+                                                                                                                                          <input          id="title"
+                                                                                                                                                        name="title"
+                                                                                                                                                                  type="text"
+                                                                                                                                                                            placeholder="What is this link?"
+                                                                                                                                                                                    >
+                                                                                                                                                                                    
+                                                                                                                                                                                            <div class="form-row">
+                                                                                                                                                                                                          <div class="form-field">
+                                                                                                                                                                                                                          <label for="category">Category</label>
+                                                                                                                                                                                                                                      <input              id="category"
+                                                                                                                                                                                                                                                        name="category"
+                                                                                                                                                                                                                                                                      type="text"
+                                                                                                                                                                                                                                                                                    placeholder="e.g. Coding"
+                                                                                                                                                                                                                                                                                                  list="category-options"
+                                                                                                                                                                                                                                                                                                              >
+                                                                                                                                                                                                                                                                                                                          <datalist id="category-options">
+                                                                                                                                                                                                                                                                                                                                            <option value="General">
+                                                                                                                                                                                                                                                                                                                                                              <option value="Coding">
+                                                                                                                                                                                                                                                                                                                                                                                <option value="Research">
+                                                                                                                                                                                                                                                                                                                                                                                                  <option value="Inspiration">
+                                                                                                                                                                                                                                                                                                                                                                                                                    <option value="Reading">
+                                                                                                                                                                                                                                                                                                                                                                                                                                    </datalist>
+                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                          
+                                                                                                                                                                                                                    <div class="form-field">
+                                                                                                                                                                                                                                    <label for="note">Note <span>(optional)</span></label>
+                                                                                                                                                                                                                                                <input              id="note"
+                                                                                                                                                                                                                                                                  name="note"
+                                                                                                                                                                                                                                                                                type="text"
+                                                                                                                                                                                                                                                                                              placeholder="Why save this?"
+                                                                                                                                                                                                                                                                                                          >
+                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                            
+                                                                                                                                                                                                    <button class="add-button" type="submit">
+                                                                                                                                                                                                                  <span>+</span> Save link
+                                                                                                                                                                                                                          </button>
+                                                                                                                                                                                                            <p id="form-message" class="form-message" role="status"></p>
+                                                                                                                                                                                                                  </form>
+                                            </section>
+                        
+                            <section class="library">
+                                      <div class="library-heading">
+                                                  <div>
+                                                                <p class="eyebrow">YOUR COLLECTION</p>
+                                                                          <h2>Saved links <span id="link-count">0</span></h2>
+                                                                                  </div>
+                                                          <input          id="search"
+                                                                        class="search-input"
+                                                                                  type="search"
+                                                                                            placeholder="Search links..."
+                                                                                                      aria-label="Search saved links"
+                                                                                                              >
+                                                                                                                    </div>
+                                      
+                                            <nav id="category-filters" class="filters" aria-label="Filter by category">
+                                                        <button class="filter active" data-category="All">All links</button>
+                                                              </nav>
+                                            
+                                                  <div id="link-list" class="link-list"></div>
+                                                  
+                                                        <div id="empty-state" class="empty-state">
+                                                                    <div class="empty-icon">↗</div>
+                                                                            <h3>Links will apear when you add some.</h3>
+                                                                                    <p>Save your first link above and it'll show up here.</p>
+                                                                                          </div>
+                                                            </section>
+                            
+                                <footer>
+                                          <p></p>
+                                                <p></p>
+                                                    </footer>
+                                  </main>
+            </body>
+    </html>
+''
